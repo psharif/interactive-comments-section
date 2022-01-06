@@ -16,7 +16,7 @@
   &-content {
     background-color: #fefefe;
     padding: 20px 40px;
-    border: 1px solid #888;
+    border: none;
     border-radius: 10px;
     height: 250px;
     width: 330px; /* Could be more or less, depending on screen size */
@@ -47,9 +47,17 @@
       }
       .cancel {
         background-color: $grayish-blue;
+        &:hover,
+        &:focus {
+          background-color: $light-grayish-blue;
+        }
       }
       .delete {
         background-color: $soft-red;
+        &:hover,
+        &:focus {
+          background-color: $pale-red;
+        }
       }
     }
   }

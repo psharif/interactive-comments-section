@@ -5,6 +5,7 @@ function CommentList() {
   return (
     <section className="comment-list">
       <Comment />
+      <EditComment isReply isLast />
       <Modal />
     </section>
   );
