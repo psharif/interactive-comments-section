@@ -1,0 +1,79 @@
+.main-comment-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  width: 100%;
+  div.vertical-rule {
+    background-color: rgba(151, 151, 151, 0.05);
+    width: 100px;
+    display: block;
+    align-self: stretch;
+    margin-left: calc(15% - 0.5px);
+    margin-right: calc(5% - 0.5px);
+    width: 1px;
+    border-right: 3px solid rgba(151, 151, 151, 0.05);
+    border-radius: 18%;
+    &.last-comment {
+      margin-bottom: 30px;
+    }
+  }
+  .comment,
+  .edit-comment {
+    width: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    & aside {
+      width: 10%;
+    }
+    & main {
+      width: 90%;
+    }
+    &.reply {
+      width: 80%;
+      align-self: flex-end;
+      & aside {
+        margin-right: 10px;
+      }
+    }
+    @import "./Comment-Components/Header-Row";
+    @import "./Comment-Components/Vote-Button";
+    @import "./Comment-Components/Main-Text-Section";
+    @import "./Comment-Components/Edit-Text-Area";
+    @import "./Comment-Components/Submit-Button";
+  }
+  .edit-comment {
+    justify-content: space-between;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+    img {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px;
+    }
+    &.reply {
+      width: 100%;
+      align-self: flex-end;
+    }
+    .submit-button {
+      margin-left: 20px;
+    }
+    .is-user {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      textarea {
+        width: 100%;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
+  }
+}

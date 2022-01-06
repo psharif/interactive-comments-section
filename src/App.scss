@@ -1,0 +1,22 @@
+$very-light-gray: #f5f6fa;
+$light-gray: #eaecf1;
+$light-grayish-blue: #c3c4ef;
+$white: #ffffff;
+$grayish-blue: #67727e;
+$dark-blue: #324152;
+$moderate-blue: #5457b6;
+$soft-red: #ed6468;
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-family: "Rubik", sans-serif;
+  @import "./styles/CommentList";
+  @import "./styles/Modal";
+}

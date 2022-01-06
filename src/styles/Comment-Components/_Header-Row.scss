@@ -1,0 +1,40 @@
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left-content {
+    display: flex;
+    align-items: center;
+    * {
+      margin-right: 20px;
+      color: $grayish-blue;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+    }
+    p.name {
+      color: $dark-blue;
+      font-weight: 700;
+    }
+    p.time {
+      letter-spacing: 0.8px;
+    }
+    p.is-user {
+      color: $white;
+      background-color: $moderate-blue;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 5px;
+      border-radius: 2px;
+    }
+  }
+  .right-content {
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @import "./icon-button";
+  }
+}

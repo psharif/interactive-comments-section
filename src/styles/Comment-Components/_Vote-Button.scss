@@ -1,0 +1,30 @@
+.vote-button {
+  margin-top: 5px;
+  width: 50px;
+  color: $moderate-blue;
+  background-color: $very-light-gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  * {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    i {
+      color: $light-grayish-blue;
+      font-size: 12px;
+    }
+    &:hover {
+      i {
+        color: $moderate-blue;
+      }
+    }
+  }
+}
