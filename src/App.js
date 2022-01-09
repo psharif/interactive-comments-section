@@ -1,9 +1,12 @@
 import CommentList from "./components/CommentList";
+import { CommentProvider } from "./context/comments.context.js";
 import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <CommentList />
+      <CommentProvider>
+        <CommentList />
+      </CommentProvider>
     </div>
   );
 }

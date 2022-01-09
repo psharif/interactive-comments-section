@@ -1,24 +1,19 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 function EditTextArea({ style = {}, ...props }) {
   const textareaRef = useRef(null);
-  const [currentValue, setCurrentValue] = useState("");
-
+  //Use Ref to change the size of the Edit Text area.
   useEffect(() => {
     textareaRef.current.style.height = "0px";
     const scrollHeight = textareaRef.current.scrollHeight;
     textareaRef.current.style.height = scrollHeight + "px";
-  }, [currentValue]);
-
-  const handleChange = (evt) => {
-    setCurrentValue(evt.target.value);
-  };
+  }, [props.text]);
 
   return (
     <textarea
       ref={textareaRef}
       style={style}
-      value={currentValue}
-      onChange={handleChange}
+      value={props.text}
+      onChange={props.handleChange}
     />
   );
 }

@@ -14,6 +14,9 @@
     font-size: 16px;
     font-weight: 700;
   }
+  p.editing {
+    color: $light-grayish-blue;
+  }
   button {
     border: none;
     background-color: transparent;
@@ -21,7 +24,7 @@
       color: $light-grayish-blue;
       font-size: 12px;
     }
-    &:hover {
+    &:not(.editing):hover {
       i {
         color: $moderate-blue;
       }

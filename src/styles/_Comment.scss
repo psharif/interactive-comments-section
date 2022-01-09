@@ -18,7 +18,7 @@
     }
   }
   .comment,
-  .edit-comment {
+  .add-comment {
     width: 100%;
     background-color: $white;
     border-radius: 10px;
@@ -47,8 +47,19 @@
     @import "./Comment-Components/Main-Text-Section";
     @import "./Comment-Components/Edit-Text-Area";
     @import "./Comment-Components/Submit-Button";
+    .is-user {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      textarea {
+        width: 100%;
+      }
+      button {
+        margin-top: 20px;
+      }
+    }
   }
-  .edit-comment {
+  .add-comment {
     justify-content: space-between;
     margin: 0px 10px;
     margin-bottom: 20px;
@@ -64,17 +75,6 @@
     }
     .submit-button {
       margin-left: 20px;
-    }
-    .is-user {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      textarea {
-        width: 100%;
-      }
-      button {
-        margin-top: 20px;
-      }
     }
   }
 }

@@ -2,10 +2,10 @@ const HeaderRow = (props) => {
   return (
     <div className="header-row">
       <div className="left-content">
-        <img src={`../images/avatars/image-amyrobson.png`} alt="amy-pic" />
-        <p className="name">amyrobson</p>
+        <img src={`.${props.imgUrl}`} alt="-pic" />
+        <p className="name">{props.userName}</p>
         {props.isUser && <p className="is-user">you</p>}
-        <p className="time">2 days ago</p>
+        <p className="time">{props.createdAt}</p>
       </div>
       <div className="right-content">{props.children}</div>
     </div>

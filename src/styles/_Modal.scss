@@ -60,5 +60,42 @@
         }
       }
     }
+    &.change-modal-content {
+      height: 350px;
+      width: 330px; /* Could be more or less, depending on screen size */
+      .change-user-title {
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        li {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 20px;
+            height: 45px;
+            width: 45px;
+          }
+          p {
+            margin: 2px;
+          }
+          &:hover {
+            background-color: $very-light-gray;
+          }
+        }
+        hr {
+          margin: 7px;
+          border: 1.5px solid $very-light-gray;
+          background-color: $very-light-gray;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  &.show {
+    display: flex;
   }
 }
